@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnDecrement: Button
     lateinit var tvResult: TextView
 
-    fun initComponent() {
+    private fun initComponent() {
         btnIncrement = findViewById(R.id.btnIncrement)
         btnDecrement = findViewById(R.id.btnDecrement)
         tvResult = findViewById(R.id.tvResult)
