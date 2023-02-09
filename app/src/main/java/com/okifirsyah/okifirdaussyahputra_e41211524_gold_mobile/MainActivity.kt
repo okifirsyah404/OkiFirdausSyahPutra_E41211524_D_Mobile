@@ -36,13 +36,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun increment() {
+    private fun increment() {
         var result = tvResult.text.toString().toInt()
         result++
         tvResult.text = result.toString()
     }
 
-    fun decrement() {
+    private fun decrement() {
         var result = tvResult.text.toString().toInt()
 
         if (result > 0) result--
