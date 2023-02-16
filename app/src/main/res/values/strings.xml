@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Oki Firdaus Syah Putra_E41211524_GOL D_Mobile</string>
+    <string name="minggu_2_layout">Minggu 2 - Layout</string>
+    <string name="linear_layout">Linear\nLayout</string>
+    <string name="relative_layout">Relative\nLayout</string>
+    <string name="constraint_layout">Constraint\nLayout</string>
+    <string name="send">Send</string>
+    <string name="subject">subject</string>
+    <string name="message">message</string>
+    <string name="to">to</string>
+    <string name="calendar">Calendar</string>
+    <string name="masukkan_tanggal">Masukkan tanggal</string>
+    <string name="welcome_back">Welcome Back</string>
 </resources>
