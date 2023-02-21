@@ -1,12 +1,12 @@
-package com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile
+package com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.modules
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.R
 
 class LinearLayoutActivity : AppCompatActivity() {
 
@@ -36,7 +36,7 @@ class LinearLayoutActivity : AppCompatActivity() {
             if (edtReceiver.text.isNotEmpty() || edtSubject.text.isNotEmpty()) {
                 Toast.makeText(this ,"Send to ${edtReceiver.text} with ${edtSubject.text} subject", Toast.LENGTH_LONG).show()
             } else {
-                Toast.makeText(this ,"Receiver and subject null", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this ,"Receiver and subject cannot be null", Toast.LENGTH_SHORT).show()
             }
         }
 

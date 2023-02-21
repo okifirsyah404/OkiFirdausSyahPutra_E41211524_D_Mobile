@@ -1,13 +1,13 @@
-package com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile
+package com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.modules
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
-import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import com.google.android.material.textfield.TextInputLayout
+import com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.R
 
 class ConstraintLayoutActivity : AppCompatActivity() {
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="16dp"
-    tools:context=".RelativeLayoutActivity">
+    tools:context=".modules.RelativeLayoutActivity">
 
     <TextView
         android:layout_marginTop="16dp"

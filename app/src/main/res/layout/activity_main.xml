@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".modules.MainActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -72,7 +72,7 @@
             android:textAllCaps="false" />
 
         <TextView
-            android:id="@+id/btnListView"
+            android:id="@+id/btnTableLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="14dp"
@@ -80,19 +80,19 @@
             android:gravity="center"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:text="List\nView"
+            android:text="Table\nLayout"
             android:textAllCaps="false" />
 
 
         <TextView
-            android:id="@+id/btnGridView"
+            android:id="@+id/btnScrollViewLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/circular_container"
             android:gravity="center"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:text="Grid\nView"
+            android:text="Scroll\nView"
             android:textAllCaps="false" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -105,7 +105,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/btnRecyclerView"
+            android:id="@+id/btnHorizontalScrollViewLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="14dp"
@@ -113,11 +113,11 @@
             android:gravity="center"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:text="Recycler\nView"
+            android:text="Horizontal\nScroll"
             android:textAllCaps="false" />
 
         <TextView
-            android:id="@+id/btnActivityTheory"
+            android:id="@+id/btnRecyclerViewList"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="14dp"
@@ -125,18 +125,18 @@
             android:gravity="center"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:text="Activity\nTheory"
+            android:text="List\nRV"
             android:textAllCaps="false" />
 
         <TextView
-            android:id="@+id/btnActivityLifeCycle"
+            android:id="@+id/btnRecyclerViewGrid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/circular_container"
             android:gravity="center"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:text="@string/relative_layout"
+            android:text="Grid\nRV"
             android:textAllCaps="false" />
 
 

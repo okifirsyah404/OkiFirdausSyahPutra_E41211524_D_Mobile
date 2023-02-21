@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,16 +15,34 @@
         android:theme="@style/Theme.OkiFirdausSyahPutra_E41211524_GOLD_Mobile"
         tools:targetApi="31">
         <activity
-            android:name=".ConstraintLayoutActivity"
+            android:name=".modules.MaterialDesignActivity"
             android:exported="false" />
         <activity
-            android:name=".RelativeLayoutActivity"
+            android:name=".modules.GridRecyclerViewActivity"
             android:exported="false" />
         <activity
-            android:name=".LinearLayoutActivity"
+            android:name=".modules.ListRecyclerViewActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".modules.HorizontalScrollActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.ScrollViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.TableLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.ConstraintLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.RelativeLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.LinearLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
