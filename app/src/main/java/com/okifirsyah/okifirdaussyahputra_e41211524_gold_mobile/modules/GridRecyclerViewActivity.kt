@@ -1,12 +1,10 @@
 package com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.modules
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
-import com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.R
+import androidx.appcompat.app.AppCompatActivity
 import com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.adapter.GridMovieAdapter
-import com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.adapter.ListMovieAdapter
 import com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.api_services.APIClient
 import com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.api_services.interfaces.TMDBApiInterface
 import com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.databinding.ActivityGridRecyclerViewBinding
@@ -15,7 +13,7 @@ import kotlinx.coroutines.launch
 
 class GridRecyclerViewActivity : AppCompatActivity() {
 
-    lateinit var activityBinding : ActivityGridRecyclerViewBinding
+    lateinit var activityBinding: ActivityGridRecyclerViewBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -31,9 +29,10 @@ class GridRecyclerViewActivity : AppCompatActivity() {
 
         val tmdbApi = APIClient.getInstance().create(TMDBApiInterface::class.java)
 
-        activityBinding.rvGrid.layoutManager = androidx.recyclerview.widget.GridLayoutManager(this, 2)
+        activityBinding.rvGrid.layoutManager =
+            androidx.recyclerview.widget.GridLayoutManager(this, 2)
 
-        GlobalScope.launch{
+        GlobalScope.launch {
             val response = tmdbApi.getTrendingMovies()
             Log.d("response", response.toString())
             if (response.results != null) {
@@ -42,7 +41,6 @@ class GridRecyclerViewActivity : AppCompatActivity() {
                 })
             }
         }
-
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

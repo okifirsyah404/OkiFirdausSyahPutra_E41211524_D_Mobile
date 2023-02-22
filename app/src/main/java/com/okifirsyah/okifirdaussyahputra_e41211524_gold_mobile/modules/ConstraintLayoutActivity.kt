@@ -8,40 +8,29 @@ import android.widget.Toast
 import androidx.cardview.widget.CardView
 import com.google.android.material.textfield.TextInputLayout
 import com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.R
+import com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.databinding.ActivityConstraintLayoutBinding
 
 class ConstraintLayoutActivity : AppCompatActivity() {
 
-    lateinit var textInputLayoutUsername: TextInputLayout
-    lateinit var textInputLayoutPassword: TextInputLayout
-    lateinit var btnForgotPassword: Button
-    lateinit var btnSignIn: CardView
-
-    fun initComponent() {
-        textInputLayoutUsername = findViewById(R.id.tilUsername)
-        textInputLayoutPassword = findViewById(R.id.tilPassword)
-        btnForgotPassword = findViewById(R.id.btnForgetPassword)
-        btnSignIn = findViewById(R.id.btnLogin)
-    }
-
+    lateinit var layoutBinding : ActivityConstraintLayoutBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_constraint_layout)
+        layoutBinding = ActivityConstraintLayoutBinding.inflate(layoutInflater)
+        setContentView(layoutBinding.root)
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = "Constraint Layout"
 
-        initComponent()
+        layoutBinding.tilPassword.editText?.setText("okifirsyah404")
 
-        textInputLayoutUsername.editText?.setText("okifirsyah404")
-
-        btnForgotPassword.setOnClickListener {
+        layoutBinding.btnForgetPassword.setOnClickListener {
             Toast.makeText(this, "Forgot Password", Toast.LENGTH_SHORT).show()
         }
 
-        btnSignIn.setOnClickListener {
+        layoutBinding.btnLogin.setOnClickListener {
 
-            val usernamePlain = textInputLayoutUsername.editText?.text.toString()
-            val passwordPlain = textInputLayoutPassword.editText?.text.toString()
+            val usernamePlain = layoutBinding.tilUsername.editText?.text.toString()
+            val passwordPlain = layoutBinding.tilPassword.editText?.text.toString()
 
             if (usernamePlain.isNotEmpty() && passwordPlain.isNotEmpty()) {
 
