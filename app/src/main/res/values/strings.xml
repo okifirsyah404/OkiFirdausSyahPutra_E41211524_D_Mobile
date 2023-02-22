@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Oki Firdaus Syah Putra_E41211524_GOL D_Mobile</string>
+    <string-array name="country_names">
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Malaysia</item>
+        <item>Thailand</item>
+        <item>Philippines</item>
+        <item>Brunei</item>
+        <item>Laos</item>
+        <item>Myanmar</item>
+        <item>Cambodia</item>
+        <item>Singapore</item>
+        <item>Vietnam</item>
+        <item>Timor Leste</item>
+        <item>China</item>
+        <item>Japan</item>
+        <item>South Korea</item>
+        <item>North Korea</item>
+        <item>Russia</item>
+        <item>United States</item>
+    </string-array>
 </resources>
