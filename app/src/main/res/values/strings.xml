@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Oki Firdaus Syah Putra_E41211524_GOL D_Mobile</string>
+    <string name="books_title">Judul Buku</string>
+    <string name="books_author">Penulis</string>
+    <string name="books_publisher">Penerbit</string>
+    <string name="books_pages">Jumlah Halaman</string>
+    <string name="books_genre">Genre</string>
+    <string name="book_description">Deskripsi Buku</string>
+    <string name="book_detail">Detail Buku</string>
+    <string name="share">Share</string>
+    <string name="book_cover">Cover Buku</string>
+    <string name="book_isbn">ISBN</string>
+    <string name="book_publish_date">Tanggal Terbit</string>
+    <string name="book_language">Bahasa</string>
+    <string name="action_profile">Profile</string>
+    <string name="action_list">List</string>
+    <string name="action_grid">Grid</string>
+    <string name="profile_name">Oki Firdaus Syah Putra</string>
+    <string name="profile_email">okifirsyah404@gmail.com</string>
 </resources>
