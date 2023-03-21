@@ -31,6 +31,10 @@ class MainFragment : Fragment() {
             findNavController().navigate(R.id.action_mainFragment_to_basicFragment)
         }
 
+        _mainFragmentBinding?.btnListMovieFragment?.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_listMovieFragment)
+        }
+
     }
 
     override fun onDestroyView() {

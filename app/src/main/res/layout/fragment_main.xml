@@ -17,5 +17,16 @@
         android:textColor="@color/white"
         android:theme="@style/Widget.Material3.Button.ElevatedButton" />
 
+    <Button
+        android:id="@+id/btn_list_movie_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp"
+        android:text="Tugas BKPM"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:theme="@style/Widget.Material3.Button.ElevatedButton" />
+
 
 </LinearLayout>

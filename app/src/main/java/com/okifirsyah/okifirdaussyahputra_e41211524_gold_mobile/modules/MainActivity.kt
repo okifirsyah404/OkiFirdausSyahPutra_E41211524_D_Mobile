@@ -11,13 +11,13 @@ import com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.databinding.Acti
 class MainActivity : AppCompatActivity() {
 
     private var _mainActivityBinding: ActivityMainBinding? = null
-    private val binding get() = _mainActivityBinding
+    val binding get() = _mainActivityBinding
     private lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _mainActivityBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding?.root)
-        
+
         supportActionBar?.hide()
 
         val navHostFragment =
@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         val appBarConfiguration = AppBarConfiguration(navController.graph)
 
         binding?.toolbar?.setupWithNavController(navController, appBarConfiguration)
-
     }
 
     override fun onSupportNavigateUp(): Boolean {

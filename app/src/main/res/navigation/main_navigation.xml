@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_mainFragment_to_basicFragment"
             app:destination="@id/basicFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_listMovieFragment"
+            app:destination="@id/listMovieFragment" />
     </fragment>
     <fragment
         android:id="@+id/basicFragment"
@@ -21,6 +24,15 @@
         tools:layout="@layout/fragment_basic">
         <action
             android:id="@+id/action_basicFragment_to_mainFragment2"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listMovieFragment"
+        android:name="com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.modules.fragments.ListMovieFragment"
+        android:label="fragment_list_movie"
+        tools:layout="@layout/fragment_list_movie">
+        <action
+            android:id="@+id/action_listMovieFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
