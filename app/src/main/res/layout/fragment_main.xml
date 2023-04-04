@@ -7,23 +7,23 @@
     tools:context=".modules.fragments.MainFragment">
 
     <Button
-        android:id="@+id/btn_basic_fragment"
+        android:id="@+id/btn_external_storage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginVertical="16dp"
-        android:text="Tugas BKPM"
+        android:text="External Storage"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:theme="@style/Widget.Material3.Button.ElevatedButton" />
 
     <Button
-        android:id="@+id/btn_list_movie_fragment"
+        android:id="@+id/btn_sql_todo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginVertical="16dp"
-        android:text="Tugas BKPM"
+        android:text="CRUD Room SQLite"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:theme="@style/Widget.Material3.Button.ElevatedButton" />

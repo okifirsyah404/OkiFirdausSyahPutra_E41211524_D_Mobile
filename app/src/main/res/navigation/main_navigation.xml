@@ -8,31 +8,48 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.modules.fragments.MainFragment"
-        android:label="Minggu 4"
+        android:label="Minggu 6"
         tools:layout="@layout/fragment_main">
         <action
-            android:id="@+id/action_mainFragment_to_basicFragment"
-            app:destination="@id/basicFragment" />
+            android:id="@+id/action_mainFragment_to_externalStorageFragment"
+            app:destination="@id/externalStorageFragment" />
         <action
-            android:id="@+id/action_mainFragment_to_listMovieFragment"
-            app:destination="@id/listMovieFragment" />
+            android:id="@+id/action_mainFragment_to_mainRoomFragment"
+            app:destination="@id/mainRoomFragment" />
     </fragment>
     <fragment
-        android:id="@+id/basicFragment"
-        android:name="com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.modules.fragments.BasicFragment"
-        android:label="Tugas BKPM"
-        tools:layout="@layout/fragment_basic">
+        android:id="@+id/externalStorageFragment"
+        android:name="com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.modules.fragments.external_storage.ExternalStorageFragment"
+        android:label="External Storage"
+        tools:layout="@layout/fragment_external_storage">
         <action
-            android:id="@+id/action_basicFragment_to_mainFragment2"
-            app:destination="@id/mainFragment" />
+            android:id="@+id/action_externalStorageFragment_to_viewExternalStorageFragment"
+            app:destination="@id/viewExternalStorageFragment" />
     </fragment>
     <fragment
-        android:id="@+id/listMovieFragment"
-        android:name="com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.modules.fragments.ListMovieFragment"
-        android:label="fragment_list_movie"
-        tools:layout="@layout/fragment_list_movie">
+        android:id="@+id/viewExternalStorageFragment"
+        android:name="com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.modules.fragments.external_storage.ViewExternalStorageFragment"
+        android:label="External Storage"
+        tools:layout="@layout/fragment_view_external_storage" />
+    <fragment
+        android:id="@+id/mainRoomFragment"
+        android:name="com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.modules.fragments.sqlite_room.main_view.MainRoomFragment"
+        android:label="Room SQLite"
+        tools:layout="@layout/fragment_main_room">
         <action
-            android:id="@+id/action_listMovieFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
+            android:id="@+id/action_mainRoomFragment_to_noteAddUpdateFragment"
+            app:destination="@id/noteAddUpdateFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/noteAddUpdateFragment"
+        android:name="com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.modules.fragments.sqlite_room.add_edit.NoteAddUpdateFragment"
+        android:label="Room SQLite"
+        tools:layout="@layout/fragment_note_add_update">
+        <argument
+            android:name="note"
+            android:defaultValue="@null"
+            app:argType="com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.data.model.Note"
+            app:nullable="true" />
+    </fragment>
+
 </navigation>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modules.fragments.external_storage.ExternalStorageFragment">
+
+    <TextView
+        android:id="@+id/tv_external_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Add text"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:theme="@style/Widget.Material3.Button.ElevatedButton" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_input_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_external_storage"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Input text here"
+        android:textColorHint="@color/black"
+
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_save_private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_input_text"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="4dp"
+        android:text="Save as private data"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:theme="@style/Widget.Material3.Button.ElevatedButton" />
+
+    <Button
+        android:id="@+id/btn_save_public"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_input_text"
+        android:layout_marginVertical="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toRightOf="@id/btn_save_private"
+        android:text="Save as public data"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:theme="@style/Widget.Material3.Button.ElevatedButton" />
+
+    <Button
+        android:id="@+id/btn_show_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_save_public"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:text="Show Data"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:theme="@style/Widget.Material3.Button.ElevatedButton" />
+
+
+</RelativeLayout>

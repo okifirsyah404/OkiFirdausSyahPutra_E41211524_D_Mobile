@@ -27,14 +27,13 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         _mainFragmentBinding = FragmentMainBinding.bind(view)
 
-        _mainFragmentBinding?.btnBasicFragment?.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_basicFragment)
+        _mainFragmentBinding?.btnExternalStorage?.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_externalStorageFragment)
         }
 
-        _mainFragmentBinding?.btnListMovieFragment?.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_listMovieFragment)
+        _mainFragmentBinding?.btnSqlTodo?.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_mainRoomFragment)
         }
-
     }
 
     override fun onDestroyView() {
