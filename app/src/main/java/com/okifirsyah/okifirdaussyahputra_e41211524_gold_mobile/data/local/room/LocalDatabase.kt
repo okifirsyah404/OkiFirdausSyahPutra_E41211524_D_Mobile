@@ -13,9 +13,6 @@ import com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.data.model.Note
     exportSchema = false
 )
 
-
 abstract class LocalDatabase : RoomDatabase() {
-
     abstract fun getNoteDao(): NoteDao
-
 }
