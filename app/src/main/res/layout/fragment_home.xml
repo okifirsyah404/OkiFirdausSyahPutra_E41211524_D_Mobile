@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module.dashboard.HomeFragment">
+
+    <Button
+        android:id="@+id/btn_maps_gps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Maps GPS"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:theme="@style/Widget.Material3.Button.ElevatedButton" />
+
+    <Button
+        android:id="@+id/btn_light_sensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="16dp"
+        android:text="Light Sensor"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:theme="@style/Widget.Material3.Button.ElevatedButton" />
+
+    <Button
+        android:id="@+id/btn_proximity_sensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="Proximity Sensor"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:theme="@style/Widget.Material3.Button.ElevatedButton" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

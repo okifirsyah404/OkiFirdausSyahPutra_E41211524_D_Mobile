@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Oki Firdaus Syah Putra_E41211524_GOL D_Mobile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="label_brightness">Level : %1$.2f lux</string>
+    <string name="label_proximity">Objek : %1$.2f cm</string>
 </resources>
