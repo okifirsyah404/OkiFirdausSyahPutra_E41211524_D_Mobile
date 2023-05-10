@@ -1,5 +1,6 @@
 package com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.adapter
 
+import android.icu.text.SimpleDateFormat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,8 +11,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.R
 import com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.api_services.model.MovieResult
+import java.util.*
 
-class GridMovieAdapter(private val movieResult: MovieResult) : RecyclerView.Adapter<GridMovieAdapter.GridViewHolder>() {
+class GridMovieAdapter(private val movieResult: MovieResult) :
+    RecyclerView.Adapter<GridMovieAdapter.GridViewHolder>() {
 
     inner class GridViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
@@ -35,16 +38,24 @@ class GridMovieAdapter(private val movieResult: MovieResult) : RecyclerView.Adap
     override fun onBindViewHolder(holder: GridViewHolder, position: Int) {
         val movie = movieResult.results[position]
 
+        val dateFormat = SimpleDateFormat("yyyy-mm-dd")
+        val dateTimeFormatter = SimpleDateFormat("dd MMMM yyyy", Locale("id"))
+
+
         holder.tvTitle.text = movie.title
-        holder.tvAuthor.text = movie.releaseDate
-        holder.tvGenre.text = movie.popularity.toString()
+        holder.tvAuthor.text = dateTimeFormatter.format(dateFormat.parse(movie.releaseDate))
+        holder.tvGenre.text = "Pupularity ${movie.popularity}"
 
         Glide.with(holder.itemView.context)
             .load("https://image.tmdb.org/t/p/w500" + movie.posterPath)
             .into(holder.imgBookCover)
 
         holder.itemView.setOnClickListener {
-            Toast.makeText(holder.itemView.context, "Kamu memilih " + movie.title, Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                holder.itemView.context,
+                "Kamu memilih " + movie.title,
+                Toast.LENGTH_SHORT
+            ).show()
         }
     }
 
