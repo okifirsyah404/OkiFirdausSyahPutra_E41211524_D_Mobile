@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_homeFragment_to_lightSensorFragment"
             app:destination="@id/lightSensorFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_moavieListFragment"
+            app:destination="@id/moavieListFragment" />
     </fragment>
     <fragment
         android:id="@+id/gpsMapsFragment"
@@ -35,4 +38,9 @@
         android:name="com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.module.light_sensor.LightSensorFragment"
         android:label="Light"
         tools:layout="@layout/fragment_light_sensor" />
+    <fragment
+        android:id="@+id/moavieListFragment"
+        android:name="com.okifirsyah.okifirdaussyahputra_e41211524_gold_mobile.module.movie_list.MoavieListFragment"
+        android:label="TMDB"
+        tools:layout="@layout/fragment_moavie_list" />
 </navigation>

@@ -38,4 +38,15 @@
         android:textColor="@color/white"
         android:theme="@style/Widget.Material3.Button.ElevatedButton" />
 
+    <Button
+        android:id="@+id/btn_tmdb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TMDB"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:theme="@style/Widget.Material3.Button.ElevatedButton" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -37,6 +37,10 @@ class HomeFragment : Fragment() {
         _homeFragmentBinding?.btnProximitySensor?.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_proximitySensorFragment)
         }
+
+        _homeFragmentBinding?.btnTmdb?.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_moavieListFragment)
+        }
     }
 
     override fun onDestroyView() {
